@@ -21,8 +21,8 @@ var simplePreprocess = require('gulp-simple-preprocess');
 gulp.task('default', function () {
   return gulp.src('src/*.html')
     .pipe(simplePreprocess({
-			env: 'prod'
-		}))
+      env: 'prod'
+    }))
     .pipe(gulp.dest('dist'));
 });
 ```
