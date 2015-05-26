@@ -20,7 +20,9 @@ var simplePreprocess = require('gulp-simple-preprocess');
 
 gulp.task('default', function () {
   return gulp.src('src/*.html')
-    .pipe(simplePreprocess())
+    .pipe(simplePreprocess({
+			env: 'prod'
+		}))
     .pipe(gulp.dest('dist'));
 });
 ```
